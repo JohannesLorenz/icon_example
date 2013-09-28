@@ -1,0 +1,7 @@
+Compile like this:
+
+  mkdir build
+  cd build
+  cmake ..
+  make
+
