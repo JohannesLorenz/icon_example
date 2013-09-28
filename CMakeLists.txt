@@ -8,19 +8,10 @@ project(icons)
 include_directories(.)
 
 add_definitions(-std=c++11)
-file(GLOB icons_SOURCES "*.cpp" "../UI/NSM/Client.C")
-# TODO: Client.C is actually a bug...
+file(GLOB icons_SOURCES "*.cpp")
 file(GLOB icons_HEADERS "*.h")
 file(GLOB icons_FORMS "*.ui")
-file(GLOB icons_RESOURCES "../../*.qrc")
-
-#MESSAGE("SRC, HDR:")
-#MESSAGE("${icons_SOURCES}")
-#MESSAGE("${icons_HEADERS}")
-
-#
-# modules
-#
+file(GLOB icons_RESOURCES "*.qrc")
 
 FIND_PACKAGE(Qt4 REQUIRED)
 INCLUDE(${QT_USE_FILE})
